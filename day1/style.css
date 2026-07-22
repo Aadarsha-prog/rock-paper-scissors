@@ -1,0 +1,16 @@
+div{
+    padding: 10px;
+    background-color: lightgray;
+}
+h1{
+    color: blue;
+}
+
+#contactForm{
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 5px;
+}
+.input-field {
+    margin-bottom: 10px;
+}
