@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROCK-PAPER-SCISSORS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script src="script.js" defer></script>
+    <h1>ROCK-PAPER-SCISSORS</h1>
+    <hr />
+    <h2>Welcome to the Game</h2>
+    <h3>Instructions</h3>
+    <ul>
+      <li>Enter, the number of rounds you want to play</li>
+      <li>Each round, you will play against the computer</li>
+      <li>Choose: either Rock, Paper, or Scissors</li>
+      <li>The computer will also choose one of the three options</li>
+      <li>Rock beats Scissors, Scissors beats Paper, and Paper beats Rock</li>
+    </ul>
+
+    <div id="game-info">
+      <p>Enter the number of rounds you want to play:</p>
+      <input type="number" id="rounds" name="rounds" min="1" />
+      <button id="start-game">Start Game</button>
+      <button id="rock" disabled>Rock</button>
+      <button id="paper" disabled>Paper</button>
+      <button id="scissors" disabled>Scissors</button>
+    </div>
+
+    <div id="choices-container">
+      <div class="user-choice container"></div>
+      <div class="computer-choice container"></div>
+    </div>
+
+    <div id="round-result">
+      <h2>Round Result</h2>
+      <p id="round-message"></p>
+    </div>
+
+    <div id="score-display">
+      <p>
+        Your Score: <span id="user-score">0</span> | Computer Score:
+        <span id="computer-score">0</span> | Draws: <span id="ties-score">0</span>
+      </p>
+      <p id="game-winner"></p>
+    </div>
+  </body>
+</html>
